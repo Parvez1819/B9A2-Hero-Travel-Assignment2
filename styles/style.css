@@ -12,6 +12,10 @@
     font-weight: 800;
 }
 
+.title {
+    text-align: center;
+}
+
 .section-description {
     color: rgba(19, 19, 24, 0.70);
     font-size: 1rem;
@@ -28,7 +32,8 @@
     font-size: 1.25rem;
 }
 
-nav styles */ nav {
+/* nav styles */
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -150,12 +155,95 @@ main {
     padding-top: 25px;
 }
 
+/* destination section style */
+
+
+
+
+.destination-img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.maldives {
+    grid-area: maldives;
+
+}
+
+.indonesia {
+    grid-area: indonesia;
+}
+
+.srilanka {
+    grid-area: srilanka;
+}
+
+.north-ameriaca {
+    grid-area: north-america;
+}
+
+.kashmir {
+    grid-area: kashmir;
+}
+
+.bangladesh {
+    grid-area: bangladesh;
+}
+
+.bandarban {
+    grid-area: bandarban;
+}
+
+.destination-img-container {
+    display: grid;
+    max-width: 1440px;
+    grid-template-areas:
+        "maldives       maldives        indonesia        indonesia"
+        "srilanka       north-america   north-america       kashmir"
+        "bangladesh     bandarban   bandarban   bandarban"
+    ;
+    gap: 20px;
+}
+
+
+.indonesia p,
+.maldives p,
+.srilanka p,
+.north-ameriaca p,
+.kashmir p,
+.bandarban p,
+.bangladesh p {
+    text-align: center;
+    position: absolute;
+    top: -60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+.maldives p,
+.indonesia p,
+.srilanka p,
+.north-ameriaca p,
+.kashmir p,
+.bangladesh p,
+.bandarban p {
+    position: relative;
+    font-weight: 800;
+    color: #fff;
+    font-size: 3rem;
+
+}
+
+
 /* responsive design for mobile */
 @media screen and (max-width:576px) {
 
     nav,
     nav ul,
-    .input-container, .popular-tour-section{
+    .input-container,
+    .popular-tour-section {
         flex-direction: column;
     }
 
@@ -166,5 +254,19 @@ main {
     .popular-tour-img img {
         width: 100%;
     }
+
+    .destination-img-container {
+        grid-template-areas:
+            "maldives"
+            "indonesia"
+            "srilanka"
+            "north-america"
+            "kashmir"
+            "bangladesh"
+            "bandarban"
+        ;
+
+    }
+
 
 }
