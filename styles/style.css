@@ -12,6 +12,9 @@
     font-size: 2.5rem;
     font-weight: 800;
 }
+.text-align{
+    text-align: justify;
+}
 
 .title {
     text-align: center;
@@ -413,10 +416,11 @@ main {
     padding-left: 10px;
     padding-right: 160px;
 }
-.newsletter-section-img{
+
+.newsletter-section-img {
     position: relative;
-    
-    
+
+
 }
 
 .discount70 {
@@ -433,6 +437,64 @@ main {
     bottom: 13%;
 }
 
+/* footer style */
+footer {
+    margin-top: 100px;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 50px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.footer-content img {
+    width: 80px;
+    padding-right: 20px;
+}
+
+.footer-content p {
+    color: #131318;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.footer-content p span {
+    color: #FF5400;
+}
+
+.footer-description {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 20px;
+
+}
+
+.foooter-icons {
+    display: flex;
+    max-width: 300px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.fa-brands {
+    font-size: 50px;
+
+    padding-bottom: 30px;
+}
+
+.copyright {
+    color: #131318;
+    font-size: 1rem;
+    font-weight: 300;
+
+}
+
 /* responsive design for mobile */
 @media screen and (max-width:576px) {
 
@@ -440,7 +502,8 @@ main {
     nav ul,
     .input-container,
     .popular-tour-section,
-    .perfect-place, .newsletter-section {
+    .perfect-place,
+    .newsletter-section {
         flex-direction: column;
     }
 
@@ -470,20 +533,24 @@ main {
         margin-left: 0;
         margin-top: 150px;
     }
-    .newsletter-section-content{
+
+    .newsletter-section-content {
         padding: 10px;
         width: 100%;
     }
-    .newsletter-section-img img{
+
+    .newsletter-section-img img {
         width: 100%;
     }
-    .discount70{
+
+    .discount70 {
         left: 150px;
-        width:200px;
+        width: 200px;
         padding: 20px;
     }
-    .discount70 h2{
-font-size: 1rem;
+
+    .discount70 h2 {
+        font-size: 1rem;
     }
 
 }
